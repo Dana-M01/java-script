@@ -1,6 +1,11 @@
 // Inicialización del controlador de ScrollMagic
 const controller = new ScrollMagic.Controller();
 
+// Inicializar el pasto con diferentes retardos
+document.querySelectorAll('.grass').forEach((grass, index) => {
+    grass.style.setProperty('--delay', Math.random() * 20);
+});
+
 // Animación de las nubes
 gsap.to('.cloud-1', {
     x: '+=50',

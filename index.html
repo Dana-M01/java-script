@@ -51,6 +51,41 @@
                 <div class="cuerpo-lobo"></div>
             </div>
         </div>
+        <div class="path">
+            <div class="stone"></div>
+            <div class="stone"></div>
+            <div class="stone"></div>
+            <div class="stone"></div>
+            <div class="stone"></div>
+            <div class="stone"></div>
+            <div class="stone"></div>
+            <div class="stone"></div>
+            <div class="stone"></div>
+            <div class="stone"></div>
+        </div>
+        <div class="grass-container">
+            <!-- Generamos múltiples filas de pasto -->
+            <div class="grass-row">
+                <div class="grass"></div><div class="grass"></div><div class="grass"></div>
+                <div class="grass"></div><div class="grass"></div><div class="grass"></div>
+                <div class="grass"></div><div class="grass"></div><div class="grass"></div>
+                <div class="grass"></div><div class="grass"></div><div class="grass"></div>
+                <div class="grass"></div><div class="grass"></div><div class="grass"></div>
+                <div class="grass"></div><div class="grass"></div><div class="grass"></div>
+                <div class="grass"></div><div class="grass"></div>
+            </div>
+        </div>
+        <script>
+            // Generamos dinámicamente más filas de pasto
+            const grassContainer = document.querySelector('.grass-container');
+            const grassRow = document.querySelector('.grass-row');
+            const numberOfRows = Math.ceil(window.innerHeight * 0.7 / 40); // Calculamos el número de filas necesarias
+
+            for(let i = 0; i < numberOfRows; i++) {
+                const newRow = grassRow.cloneNode(true);
+                grassContainer.appendChild(newRow);
+            }
+        </script>
     </div>
 </body>
 </html>
