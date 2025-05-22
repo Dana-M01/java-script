@@ -5,7 +5,71 @@
 }
 
 body {
-    background-color: white;
     min-height: 100vh;
     font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.scene {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: #90EE90; /* verde claro */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    color: #FF0000;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.characters {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+.caperucita {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cabeza {
+    width: 50px;
+    height: 50px;
+    background-color: #FF0000;
+    border-radius: 50%;
+}
+
+.cuerpo {
+    width: 40px;
+    height: 80px;
+    background-color: #FF0000;
+}
+
+.lobo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cabeza-lobo {
+    width: 50px;
+    height: 50px;
+    background-color: #808080;
+    border-radius: 50%;
+}
+
+.cuerpo-lobo {
+    width: 40px;
+    height: 80px;
+    background-color: #808080;
 }
