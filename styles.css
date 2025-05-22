@@ -14,18 +14,76 @@ body {
     width: 100vw;
     height: 100vh;
     position: relative;
-    background-color: #90EE90; /* verde claro */
+    background: linear-gradient(to bottom, #87CEEB 0%, #87CEEB 30%, #90EE90 30%, #90EE90 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
+
+.cloud {
+    position: absolute;
+    display: flex;
+    gap: 5px;
+}
+
+.cloud-circle {
+    background-color: white;
+    border-radius: 50%;
+}
+
+.cloud-1 {
+    top: 5%;
+    left: 10%;
+}
+
+.cloud-1 .cloud-circle:nth-child(1) { width: 30px; height: 30px; }
+.cloud-1 .cloud-circle:nth-child(2) { width: 40px; height: 40px; }
+.cloud-1 .cloud-circle:nth-child(3) { width: 30px; height: 30px; }
+
+.cloud-2 {
+    top: 15%;
+    right: 20%;
+}
+
+.cloud-2 .cloud-circle:nth-child(1) { width: 25px; height: 25px; }
+.cloud-2 .cloud-circle:nth-child(2) { width: 35px; height: 35px; }
+.cloud-2 .cloud-circle:nth-child(3) { width: 25px; height: 25px; }
+
+.cloud-3 {
+    top: 5%;
+    right: 45%;
+}
+
+.cloud-3 .cloud-circle:nth-child(1) { width: 35px; height: 35px; }
+.cloud-3 .cloud-circle:nth-child(2) { width: 45px; height: 45px; }
+.cloud-3 .cloud-circle:nth-child(3) { width: 35px; height: 35px; }
+.cloud-3 .cloud-circle:nth-child(4) { width: 30px; height: 30px; }
+
+.cloud-4 {
+    top: 18%;
+    left: 35%;
+}
+
+.cloud-4 .cloud-circle:nth-child(1) { width: 20px; height: 20px; }
+.cloud-4 .cloud-circle:nth-child(2) { width: 30px; height: 30px; }
+.cloud-4 .cloud-circle:nth-child(3) { width: 20px; height: 20px; }
+
+.cloud-5 {
+    top: 8%;
+    left: 70%;
+}
+
+.cloud-5 .cloud-circle:nth-child(1) { width: 28px; height: 28px; }
+.cloud-5 .cloud-circle:nth-child(2) { width: 38px; height: 38px; }
+.cloud-5 .cloud-circle:nth-child(3) { width: 28px; height: 28px; }
+.cloud-5 .cloud-circle:nth-child(4) { width: 25px; height: 25px; }
 
 .title {
     color: #FF0000;
     font-size: 4rem;
-    margin-bottom: 2rem;
     text-align: center;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .characters {
